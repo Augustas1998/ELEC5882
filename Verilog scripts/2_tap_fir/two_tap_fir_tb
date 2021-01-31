@@ -1,7 +1,7 @@
-//`timescale 1ns / 100ps
-
+// Test script for the two_tap_fir filter
 module two_tap_fir_tb;
 
+// Set the parameters for the 50MHz clock signal
 localparam NUM_CYCLES = 500;
 localparam CLOCK_FREQ = 50000000;
 localparam RST_CYCLES = 10;
@@ -11,6 +11,7 @@ reg reset;
 reg startTransistion;
 wire [31:0] outputData;
 
+// Connect the two_tap_fir script
 two_tap_fir dut(
 	.clock 	(clock),
 	.startTransistion (startTransistion),

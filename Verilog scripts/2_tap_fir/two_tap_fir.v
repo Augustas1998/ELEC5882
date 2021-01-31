@@ -1,7 +1,7 @@
 module two_tap_fir(
 	input clock,
 	input startTransistion,
-	output reg [9:0] dataOut
+	output reg [31:0] dataOut
 );
 
 // Continuous input signal x for now is just a pre-set array.
